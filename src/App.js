@@ -8,9 +8,9 @@ const DUMMY_EXPENSES = [
     id: "e2",
     title: "Car Insurance",
     amount: 294.67,
-    date: new Date(2024, 3, 17),
+    date: new Date(2023, 3, 17),
   },
-  { id: "e3", title: "new TV", amount: 794.97, date: new Date(2024, 4, 1) },
+  { id: "e3", title: "new TV", amount: 794.97, date: new Date(2022, 4, 1) },
   {
     id: "e4",
     title: "New Desk (Wooden)",
@@ -20,18 +20,17 @@ const DUMMY_EXPENSES = [
 ];
 
 const App = () => {
-
-  const[expenses, setExpenses] = useState(DUMMY_EXPENSES);
+  const [expenses, setExpenses] = useState(DUMMY_EXPENSES);
 
   const addExpenseHandler = (expense) => {
-    setExpenses(prevExpenses => {
+    setExpenses((prevExpenses) => {
       return [expense, ...prevExpenses];
     });
   };
 
   return (
     <div>
-      <h2>Let's get started!</h2>
+      <h2 className="main-heading">Expense Tracker</h2>
       <NewExpense onAddExpense={addExpenseHandler} />{" "}
       {/* use of Probs: moving data from child to parent components */}
       <Expenses items={expenses} />{" "}

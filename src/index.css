@@ -10,5 +10,12 @@ html {
 
 body {
   margin: 0;
-  background-color: #3f3f3f;
+  background-color: #F1F1F2;
+}
+.main-heading {
+  color: #1d0609; 
+  text-align: center; 
+  padding: 10px 0; 
+  background-color: #1d0609; 
+  border-bottom: 2px solid #B0C4DE; 
 }
