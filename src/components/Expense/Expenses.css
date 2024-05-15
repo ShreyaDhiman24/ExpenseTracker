@@ -1,7 +1,11 @@
 .expenses {
     padding: 1rem;
-    background-color: #834f56ec ;
+    background-color: #1c496e ;
     margin: 2rem auto;
     width: 50rem;
     max-width: 95%;
+  }
+
+  li.expenses-item {
+    list-style-type: none;
   }
